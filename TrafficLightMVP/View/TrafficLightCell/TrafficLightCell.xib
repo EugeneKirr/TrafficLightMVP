@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="g7v-45-CpN" customClass="TrafficLightCell" customModule="TrafficLightMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="442"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aVH-E9-vev">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="442"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M8R-ea-iPf">
+                        <rect key="frame" x="16" y="378" width="178" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="eP4-iz-arb"/>
+                        </constraints>
+                        <segments>
+                            <segment title="Green"/>
+                            <segment title="Yellow"/>
+                            <segment title="Red"/>
+                        </segments>
+                        <connections>
+                            <action selector="changeTrafficLightSegmentedControl:" destination="g7v-45-CpN" eventType="valueChanged" id="pVa-jA-zUS"/>
+                        </connections>
+                    </segmentedControl>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q0g-Rv-Jww">
+                        <rect key="frame" x="16" y="16" width="178" height="309.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsA-ik-Ai1">
+                                <rect key="frame" x="43" y="0.0" width="92.5" height="92.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dsA-ik-Ai1" secondAttribute="height" multiplier="1:1" id="64T-tE-3gS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="LK7-mj-qXz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-19-DeO">
+                                <rect key="frame" x="43" y="108.5" width="92.5" height="92.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d9k-19-DeO" secondAttribute="height" multiplier="1:1" id="12E-Np-bhw"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="FFL-cu-s9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1D-bH-7WY">
+                                <rect key="frame" x="43" y="217" width="92.5" height="92.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X1D-bH-7WY" secondAttribute="height" multiplier="1:1" id="rYZ-8R-oxi"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="E9O-ho-KOi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GH-QF-AL6">
+                        <rect key="frame" x="16" y="341.5" width="178" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Q0g-Rv-Jww" secondAttribute="trailing" constant="16" id="Mef-Ry-YjJ"/>
+                    <constraint firstItem="Q0g-Rv-Jww" firstAttribute="leading" secondItem="aVH-E9-vev" secondAttribute="leading" constant="16" id="N2M-cN-jBA"/>
+                    <constraint firstItem="M8R-ea-iPf" firstAttribute="top" secondItem="6GH-QF-AL6" secondAttribute="bottom" constant="16" id="NdB-0h-Cd2"/>
+                    <constraint firstAttribute="bottom" secondItem="M8R-ea-iPf" secondAttribute="bottom" constant="16" id="UbF-KW-oFm"/>
+                    <constraint firstAttribute="trailing" secondItem="6GH-QF-AL6" secondAttribute="trailing" constant="16" id="Vox-9Z-CVK"/>
+                    <constraint firstItem="6GH-QF-AL6" firstAttribute="top" secondItem="Q0g-Rv-Jww" secondAttribute="bottom" constant="16" id="Whd-Wi-cHk"/>
+                    <constraint firstItem="6GH-QF-AL6" firstAttribute="leading" secondItem="aVH-E9-vev" secondAttribute="leading" constant="16" id="Y9T-eo-NTa"/>
+                    <constraint firstItem="M8R-ea-iPf" firstAttribute="leading" secondItem="aVH-E9-vev" secondAttribute="leading" constant="16" id="jdJ-eO-Xkt"/>
+                    <constraint firstItem="Q0g-Rv-Jww" firstAttribute="top" secondItem="aVH-E9-vev" secondAttribute="top" constant="16" id="kkS-dF-l1r"/>
+                    <constraint firstAttribute="trailing" secondItem="M8R-ea-iPf" secondAttribute="trailing" constant="16" id="oG3-Z7-TP9"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="210" height="442"/>
+            <connections>
+                <outlet property="greenLightButton" destination="dsA-ik-Ai1" id="Isl-81-o94"/>
+                <outlet property="redLightButton" destination="X1D-bH-7WY" id="ge9-jE-0A4"/>
+                <outlet property="trafficLightDescriptionLabel" destination="6GH-QF-AL6" id="f8g-4z-wcr"/>
+                <outlet property="trafficLightSegmentedControl" destination="M8R-ea-iPf" id="Xov-ot-jPE"/>
+                <outlet property="yellowLightButton" destination="d9k-19-DeO" id="hB6-Yc-iOe"/>
+            </connections>
+            <point key="canvasLocation" x="101.25" y="166.25"/>
+        </collectionViewCell>
+    </objects>
+</document>
