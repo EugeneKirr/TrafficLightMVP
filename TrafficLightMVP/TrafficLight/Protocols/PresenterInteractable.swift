@@ -10,6 +10,10 @@ import UIKit
 
 protocol PresenterInteractable: AnyObject {
     
+    func initSetup()
+    
+    func reloadView()
+    
     func updateTrafficLightView(with trafficLight: TrafficLights)
     
 }

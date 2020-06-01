@@ -18,21 +18,28 @@ class TrafficLightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.view = self
+        presenter.viewDidLoad(self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.viewDidAppear()
+    }
+
+}
+
+extension TrafficLightViewController: PresenterInteractable {
+    
+    func initSetup() {
         dataProvider.interfaceActionDelegate = self
         collectionView.delegate = dataProvider
         collectionView.dataSource = dataProvider
         collectionView.register(UINib(nibName: dataProvider.cellDescribingString, bundle: nil), forCellWithReuseIdentifier: dataProvider.cellDescribingString)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    func reloadView() {
         collectionView.reloadData()
     }
-
-}
-
-extension TrafficLightViewController: PresenterInteractable {
     
     func updateTrafficLightView(with trafficLight: TrafficLights) {
         dataProvider.chosenTrafficLight = trafficLight

@@ -62,6 +62,18 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		0B461A502485448D005B4AA0 /* TrafficLight */ = {
+			isa = PBXGroup;
+			children = (
+				0B35A42D24850CBE005B082A /* Protocols */,
+				0BE8CA7B2484ED47006313F9 /* SupportingFiles */,
+				0BE8CA782484ED28006313F9 /* Model */,
+				0BE8CA792484ED34006313F9 /* View */,
+				0BE8CA7A2484ED3A006313F9 /* Presenter */,
+			);
+			path = TrafficLight;
+			sourceTree = "<group>";
+		};
 		0B84162A2484F11300AA623B /* TrafficLightCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +102,7 @@
 		0BE8CA632484EB80006313F9 /* TrafficLightMVP */ = {
 			isa = PBXGroup;
 			children = (
-				0B35A42D24850CBE005B082A /* Protocols */,
-				0BE8CA7B2484ED47006313F9 /* SupportingFiles */,
-				0BE8CA782484ED28006313F9 /* Model */,
-				0BE8CA792484ED34006313F9 /* View */,
-				0BE8CA7A2484ED3A006313F9 /* Presenter */,
+				0B461A502485448D005B4AA0 /* TrafficLight */,
 			);
 			path = TrafficLightMVP;
 			sourceTree = "<group>";
@@ -365,7 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/TrafficLight/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/TrafficLight/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
