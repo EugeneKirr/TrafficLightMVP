@@ -10,18 +10,22 @@ import Foundation
 
 class TrafficLightPresenter {
     
-    private let manager = TrafficLightManager()
+    private let service = TrafficLightService()
     
     private weak var view: PresenterInteractable?
     
     func trafficLightSectionChanged(_ index: Int) {
-        let newTrafficLight = manager.getTrafficLight(for: index)
-        view?.updateTrafficLightView(with: newTrafficLight)
+        service.setTrafficLight(for: index)
+        view?.updateLightView(with: service.getTrafficLight())
     }
     
     func viewDidLoad(_ viewToInteract: PresenterInteractable) {
         self.view = viewToInteract
         view?.initSetup()
+    }
+    
+    func viewWillAppear() {
+        view?.updateLightView(with: service.getTrafficLight())
     }
     
     func viewDidAppear() {

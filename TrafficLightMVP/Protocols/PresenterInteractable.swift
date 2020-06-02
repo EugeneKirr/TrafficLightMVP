@@ -14,6 +14,6 @@ protocol PresenterInteractable: AnyObject {
     
     func reloadView()
     
-    func updateTrafficLightView(with trafficLight: TrafficLights)
+    func updateLightView(with light: LightViewUsable)
     
 }

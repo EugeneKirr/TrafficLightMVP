@@ -33,14 +33,14 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q0g-Rv-Jww">
                         <rect key="frame" x="16" y="16" width="178" height="309.5"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsA-ik-Ai1">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1D-bH-7WY">
                                 <rect key="frame" x="43" y="0.0" width="92.5" height="92.5"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="dsA-ik-Ai1" secondAttribute="height" multiplier="1:1" id="64T-tE-3gS"/>
+                                    <constraint firstAttribute="width" secondItem="X1D-bH-7WY" secondAttribute="height" multiplier="1:1" id="rYZ-8R-oxi"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="LK7-mj-qXz"/>
+                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="E9O-ho-KOi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-19-DeO">
@@ -53,14 +53,14 @@
                                     <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="FFL-cu-s9U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1D-bH-7WY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsA-ik-Ai1">
                                 <rect key="frame" x="43" y="217" width="92.5" height="92.5"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="X1D-bH-7WY" secondAttribute="height" multiplier="1:1" id="rYZ-8R-oxi"/>
+                                    <constraint firstAttribute="width" secondItem="dsA-ik-Ai1" secondAttribute="height" multiplier="1:1" id="64T-tE-3gS"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="E9O-ho-KOi"/>
+                                    <action selector="tapLightButton:" destination="g7v-45-CpN" eventType="touchUpInside" id="LK7-mj-qXz"/>
                                 </connections>
                             </button>
                         </subviews>

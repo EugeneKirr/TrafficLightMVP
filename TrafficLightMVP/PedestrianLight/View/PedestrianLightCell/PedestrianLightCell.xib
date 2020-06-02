@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4sp-dT-n4E" customClass="PedestrianLightCell" customModule="TrafficLightMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="473"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="frE-Hg-HeJ">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="473"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="7f8-ql-olA">
+                        <rect key="frame" x="16" y="16" width="241" height="441"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sye-aT-Rvl">
+                                <rect key="frame" x="59.5" y="0.0" width="122" height="260.5"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mG-aL-o4u">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="122.5"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9mG-aL-o4u" secondAttribute="height" multiplier="1:1" id="jNn-fO-1zc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="hand.raised.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapLightButton:" destination="4sp-dT-n4E" eventType="touchUpInside" id="Eym-fH-jYZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7P-xk-HOb">
+                                        <rect key="frame" x="0.0" y="138.5" width="122" height="122"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="person.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapLightButton:" destination="4sp-dT-n4E" eventType="touchUpInside" id="yJn-dr-1h4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x7P-xk-HOb" firstAttribute="width" secondItem="x7P-xk-HOb" secondAttribute="height" multiplier="1:1" id="H1w-tx-e9M"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-G8-peg">
+                                <rect key="frame" x="76.5" y="292.5" width="88" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSn-uE-ZN6">
+                                <rect key="frame" x="72.5" y="345" width="96" height="96"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4c2-G2-DtE"/>
+                                    <constraint firstAttribute="width" secondItem="QSn-uE-ZN6" secondAttribute="height" multiplier="1:1" id="krw-x1-OfA"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tapDemandButton:" destination="4sp-dT-n4E" eventType="touchUpInside" id="PSd-Nk-Rgz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7f8-ql-olA" firstAttribute="leading" secondItem="frE-Hg-HeJ" secondAttribute="leading" constant="16" id="Ate-5o-FJg"/>
+                    <constraint firstItem="7f8-ql-olA" firstAttribute="top" secondItem="frE-Hg-HeJ" secondAttribute="top" constant="16" id="R78-Zu-k93"/>
+                    <constraint firstAttribute="bottom" secondItem="7f8-ql-olA" secondAttribute="bottom" constant="16" id="STI-iF-wbU"/>
+                    <constraint firstAttribute="trailing" secondItem="7f8-ql-olA" secondAttribute="trailing" constant="16" id="r6S-dX-lWR"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="273" height="473"/>
+            <connections>
+                <outlet property="greenLightButton" destination="x7P-xk-HOb" id="vdO-IY-aiO"/>
+                <outlet property="pedestrianLightDemandButton" destination="QSn-uE-ZN6" id="bnD-wg-wRo"/>
+                <outlet property="pedestrianLightDescriptionLabel" destination="gGm-G8-peg" id="9VV-WN-ucg"/>
+                <outlet property="redLightButton" destination="9mG-aL-o4u" id="hQt-rp-HzT"/>
+            </connections>
+            <point key="canvasLocation" x="-111.5625" y="308.125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hand.raised.fill" catalog="system" width="64" height="64"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

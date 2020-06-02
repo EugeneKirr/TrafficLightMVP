@@ -10,28 +10,42 @@
 		0B35A42A248509B0005B082A /* TrafficLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A429248509B0005B082A /* TrafficLights.swift */; };
 		0B35A42C24850B01005B082A /* TrafficLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A42B24850B01005B082A /* TrafficLightPresenter.swift */; };
 		0B35A42F24850D11005B082A /* PresenterInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A42E24850D11005B082A /* PresenterInteractable.swift */; };
-		0B35A43124850E1A005B082A /* TrafficLightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A43024850E1A005B082A /* TrafficLightManager.swift */; };
 		0B35A4332485184B005B082A /* InterfaceActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */; };
 		0B84162C2484F13100AA623B /* TrafficLightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84162B2484F13000AA623B /* TrafficLightCell.swift */; };
 		0B84162E2484F17D00AA623B /* TrafficLightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B84162D2484F17D00AA623B /* TrafficLightCell.xib */; };
 		0B8416302484F84600AA623B /* TrafficLightDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84162F2484F84600AA623B /* TrafficLightDataProvider.swift */; };
+		0BCF2A8A24863E8B00184097 /* PedestrianLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCF2A8924863E8B00184097 /* PedestrianLights.swift */; };
+		0BE7F19F248643EF004B7F20 /* PedestrianLight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE7F19E248643EF004B7F20 /* PedestrianLight.storyboard */; };
+		0BE7F1A1248644B3004B7F20 /* PedestrianLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7F1A0248644B3004B7F20 /* PedestrianLightViewController.swift */; };
+		0BE7F1A32486463F004B7F20 /* PedestrianLightDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7F1A22486463F004B7F20 /* PedestrianLightDataProvider.swift */; };
+		0BE7F1A62486477D004B7F20 /* PedestrianLightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7F1A52486477D004B7F20 /* PedestrianLightCell.swift */; };
+		0BE7F1A82486493C004B7F20 /* PedestrianLightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE7F1A72486493C004B7F20 /* PedestrianLightCell.xib */; };
 		0BE8CA652484EB80006313F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8CA642484EB80006313F9 /* AppDelegate.swift */; };
 		0BE8CA672484EB80006313F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8CA662484EB80006313F9 /* SceneDelegate.swift */; };
 		0BE8CA692484EB80006313F9 /* TrafficLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8CA682484EB80006313F9 /* TrafficLightViewController.swift */; };
 		0BE8CA6C2484EB80006313F9 /* TrafficLight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE8CA6A2484EB80006313F9 /* TrafficLight.storyboard */; };
 		0BE8CA6E2484EB82006313F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE8CA6D2484EB82006313F9 /* Assets.xcassets */; };
 		0BE8CA712484EB82006313F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE8CA6F2484EB82006313F9 /* LaunchScreen.storyboard */; };
+		0BEA12F62486956F00407317 /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA12F52486956F00407317 /* TrafficLightService.swift */; };
+		0BEDC5C92486561300B763E9 /* PedestrianLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDC5C82486561300B763E9 /* PedestrianLightPresenter.swift */; };
+		0BEDC5CB2486577000B763E9 /* LightViewUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDC5CA2486577000B763E9 /* LightViewUsable.swift */; };
+		0BEDC5CE24865E6C00B763E9 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDC5CD24865E6C00B763E9 /* UITabBarControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B35A429248509B0005B082A /* TrafficLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLights.swift; sourceTree = "<group>"; };
 		0B35A42B24850B01005B082A /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
 		0B35A42E24850D11005B082A /* PresenterInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInteractable.swift; sourceTree = "<group>"; };
-		0B35A43024850E1A005B082A /* TrafficLightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightManager.swift; sourceTree = "<group>"; };
 		0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceActionDelegate.swift; sourceTree = "<group>"; };
 		0B84162B2484F13000AA623B /* TrafficLightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCell.swift; sourceTree = "<group>"; };
 		0B84162D2484F17D00AA623B /* TrafficLightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficLightCell.xib; sourceTree = "<group>"; };
 		0B84162F2484F84600AA623B /* TrafficLightDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightDataProvider.swift; sourceTree = "<group>"; };
+		0BCF2A8924863E8B00184097 /* PedestrianLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianLights.swift; sourceTree = "<group>"; };
+		0BE7F19E248643EF004B7F20 /* PedestrianLight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PedestrianLight.storyboard; sourceTree = "<group>"; };
+		0BE7F1A0248644B3004B7F20 /* PedestrianLightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianLightViewController.swift; sourceTree = "<group>"; };
+		0BE7F1A22486463F004B7F20 /* PedestrianLightDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianLightDataProvider.swift; sourceTree = "<group>"; };
+		0BE7F1A52486477D004B7F20 /* PedestrianLightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianLightCell.swift; sourceTree = "<group>"; };
+		0BE7F1A72486493C004B7F20 /* PedestrianLightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PedestrianLightCell.xib; sourceTree = "<group>"; };
 		0BE8CA612484EB80006313F9 /* TrafficLightMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE8CA642484EB80006313F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BE8CA662484EB80006313F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +54,10 @@
 		0BE8CA6D2484EB82006313F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BE8CA702484EB82006313F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BE8CA722484EB82006313F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BEA12F52486956F00407317 /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
+		0BEDC5C82486561300B763E9 /* PedestrianLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedestrianLightPresenter.swift; sourceTree = "<group>"; };
+		0BEDC5CA2486577000B763E9 /* LightViewUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewUsable.swift; sourceTree = "<group>"; };
+		0BEDC5CD24865E6C00B763E9 /* UITabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0B35A42E24850D11005B082A /* PresenterInteractable.swift */,
+				0BEDC5CA2486577000B763E9 /* LightViewUsable.swift */,
 				0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */,
 			);
 			path = Protocols;
@@ -65,8 +84,6 @@
 		0B461A502485448D005B4AA0 /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				0B35A42D24850CBE005B082A /* Protocols */,
-				0BE8CA7B2484ED47006313F9 /* SupportingFiles */,
 				0BE8CA782484ED28006313F9 /* Model */,
 				0BE8CA792484ED34006313F9 /* View */,
 				0BE8CA7A2484ED3A006313F9 /* Presenter */,
@@ -81,6 +98,52 @@
 				0B84162D2484F17D00AA623B /* TrafficLightCell.xib */,
 			);
 			path = TrafficLightCell;
+			sourceTree = "<group>";
+		};
+		0BCF2A8424863C9A00184097 /* PedestrianLight */ = {
+			isa = PBXGroup;
+			children = (
+				0BCF2A8524863D9E00184097 /* Model */,
+				0BCF2A8724863DAF00184097 /* View */,
+				0BCF2A8624863DA500184097 /* Presenter */,
+			);
+			path = PedestrianLight;
+			sourceTree = "<group>";
+		};
+		0BCF2A8524863D9E00184097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BCF2A8924863E8B00184097 /* PedestrianLights.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BCF2A8624863DA500184097 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDC5C82486561300B763E9 /* PedestrianLightPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0BCF2A8724863DAF00184097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7F1A424864762004B7F20 /* PedestrianLightCell */,
+				0BE7F1A0248644B3004B7F20 /* PedestrianLightViewController.swift */,
+				0BE7F1A22486463F004B7F20 /* PedestrianLightDataProvider.swift */,
+				0BE7F19E248643EF004B7F20 /* PedestrianLight.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BE7F1A424864762004B7F20 /* PedestrianLightCell */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7F1A52486477D004B7F20 /* PedestrianLightCell.swift */,
+				0BE7F1A72486493C004B7F20 /* PedestrianLightCell.xib */,
+			);
+			path = PedestrianLightCell;
 			sourceTree = "<group>";
 		};
 		0BE8CA582484EB7F006313F9 = {
@@ -102,7 +165,12 @@
 		0BE8CA632484EB80006313F9 /* TrafficLightMVP */ = {
 			isa = PBXGroup;
 			children = (
+				0BEDC5CC24865E4C00B763E9 /* Extensions */,
+				0B35A42D24850CBE005B082A /* Protocols */,
+				0BE8CA7B2484ED47006313F9 /* SupportingFiles */,
+				0BEA12F42486954A00407317 /* DataSource */,
 				0B461A502485448D005B4AA0 /* TrafficLight */,
+				0BCF2A8424863C9A00184097 /* PedestrianLight */,
 			);
 			path = TrafficLightMVP;
 			sourceTree = "<group>";
@@ -111,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				0B35A429248509B0005B082A /* TrafficLights.swift */,
-				0B35A43024850E1A005B082A /* TrafficLightManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +212,22 @@
 				0BE8CA722484EB82006313F9 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0BEA12F42486954A00407317 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0BEA12F52486956F00407317 /* TrafficLightService.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		0BEDC5CC24865E4C00B763E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDC5CD24865E6C00B763E9 /* UITabBarControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +292,8 @@
 				0BE8CA712484EB82006313F9 /* LaunchScreen.storyboard in Resources */,
 				0BE8CA6E2484EB82006313F9 /* Assets.xcassets in Resources */,
 				0BE8CA6C2484EB80006313F9 /* TrafficLight.storyboard in Resources */,
+				0BE7F19F248643EF004B7F20 /* PedestrianLight.storyboard in Resources */,
+				0BE7F1A82486493C004B7F20 /* PedestrianLightCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,16 +304,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE7F1A32486463F004B7F20 /* PedestrianLightDataProvider.swift in Sources */,
+				0BEDC5CB2486577000B763E9 /* LightViewUsable.swift in Sources */,
 				0B35A42C24850B01005B082A /* TrafficLightPresenter.swift in Sources */,
+				0BE7F1A1248644B3004B7F20 /* PedestrianLightViewController.swift in Sources */,
+				0BE7F1A62486477D004B7F20 /* PedestrianLightCell.swift in Sources */,
 				0B84162C2484F13100AA623B /* TrafficLightCell.swift in Sources */,
 				0BE8CA692484EB80006313F9 /* TrafficLightViewController.swift in Sources */,
 				0B35A42A248509B0005B082A /* TrafficLights.swift in Sources */,
+				0BEA12F62486956F00407317 /* TrafficLightService.swift in Sources */,
+				0BEDC5C92486561300B763E9 /* PedestrianLightPresenter.swift in Sources */,
 				0B35A42F24850D11005B082A /* PresenterInteractable.swift in Sources */,
 				0BE8CA652484EB80006313F9 /* AppDelegate.swift in Sources */,
 				0BE8CA672484EB80006313F9 /* SceneDelegate.swift in Sources */,
+				0BEDC5CE24865E6C00B763E9 /* UITabBarControllerExtensions.swift in Sources */,
+				0BCF2A8A24863E8B00184097 /* PedestrianLights.swift in Sources */,
 				0B8416302484F84600AA623B /* TrafficLightDataProvider.swift in Sources */,
 				0B35A4332485184B005B082A /* InterfaceActionDelegate.swift in Sources */,
-				0B35A43124850E1A005B082A /* TrafficLightManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/TrafficLight/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/TrafficLight/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrafficLightMVP/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

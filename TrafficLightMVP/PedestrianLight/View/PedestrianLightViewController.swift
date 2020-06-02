@@ -1,20 +1,20 @@
 //
-//  TrafficLightViewController.swift
+//  PedestrianLightViewController.swift
 //  TrafficLightMVP
 //
-//  Created by Eugene Kireichev on 01/06/2020.
+//  Created by Eugene Kireichev on 02/06/2020.
 //  Copyright © 2020 Eugene Kireichev. All rights reserved.
 //
 
 import UIKit
 
-class TrafficLightViewController: UIViewController {
-
+class PedestrianLightViewController: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let dataProvider = TrafficLightDataProvider()
+    private let dataProvider = PedestrianLightDataProvider()
     
-    private let presenter = TrafficLightPresenter()
+    private let presenter = PedestrianLightPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +26,9 @@ class TrafficLightViewController: UIViewController {
         presenter.viewWillAppear()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        presenter.viewDidAppear()
-    }
-
 }
 
-extension TrafficLightViewController: PresenterInteractable {
+extension PedestrianLightViewController: PresenterInteractable {
     
     func initSetup() {
         dataProvider.interfaceActionDelegate = self
@@ -47,17 +42,18 @@ extension TrafficLightViewController: PresenterInteractable {
     }
     
     func updateLightView(with light: LightViewUsable) {
-        guard let trafficLight = light as? TrafficLights else { return }
-        dataProvider.chosenTrafficLight = trafficLight
+        guard let pedestrianLight = light as? PedestrianLights else { return }
+        dataProvider.chosenPedestrianLight = pedestrianLight
         collectionView.reloadData()
     }
-    
+ 
 }
 
-extension TrafficLightViewController: InterfaceActionDelegate {
+extension PedestrianLightViewController: InterfaceActionDelegate {
     
     func tapActionForElement(with index: Int) {
-        presenter.trafficLightSectionChanged(index)
+        guard index == 2 else { presenter.pedestrianLightSectionChanged(index); return }
+        presenter.pedestrianLightSectionDemanded(0)
     }
-
+    
 }
