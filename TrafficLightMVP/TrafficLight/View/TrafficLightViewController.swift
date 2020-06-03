@@ -14,21 +14,21 @@ class TrafficLightViewController: UIViewController {
     
     private let dataProvider = TrafficLightDataProvider()
     
-    private let presenter = TrafficLightPresenter()
+    var presenter: ViewInteractable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad(self)
+        presenter?.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.viewWillAppear()
+        presenter?.viewWillAppear()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        presenter.viewDidAppear()
+        presenter?.viewDidAppear()
     }
 
 }
@@ -57,7 +57,7 @@ extension TrafficLightViewController: PresenterInteractable {
 extension TrafficLightViewController: InterfaceActionDelegate {
     
     func tapActionForElement(with index: Int) {
-        presenter.trafficLightSectionChanged(index)
+        presenter?.lightSectionChanged(index)
     }
 
 }

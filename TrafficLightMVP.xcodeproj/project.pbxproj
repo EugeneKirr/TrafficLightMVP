@@ -11,6 +11,7 @@
 		0B35A42C24850B01005B082A /* TrafficLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A42B24850B01005B082A /* TrafficLightPresenter.swift */; };
 		0B35A42F24850D11005B082A /* PresenterInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A42E24850D11005B082A /* PresenterInteractable.swift */; };
 		0B35A4332485184B005B082A /* InterfaceActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */; };
+		0B6E26AD24878B16000B90DF /* ViewInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E26AC24878B16000B90DF /* ViewInteractable.swift */; };
 		0B84162C2484F13100AA623B /* TrafficLightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84162B2484F13000AA623B /* TrafficLightCell.swift */; };
 		0B84162E2484F17D00AA623B /* TrafficLightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B84162D2484F17D00AA623B /* TrafficLightCell.xib */; };
 		0B8416302484F84600AA623B /* TrafficLightDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84162F2484F84600AA623B /* TrafficLightDataProvider.swift */; };
@@ -37,6 +38,7 @@
 		0B35A42B24850B01005B082A /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
 		0B35A42E24850D11005B082A /* PresenterInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInteractable.swift; sourceTree = "<group>"; };
 		0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceActionDelegate.swift; sourceTree = "<group>"; };
+		0B6E26AC24878B16000B90DF /* ViewInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInteractable.swift; sourceTree = "<group>"; };
 		0B84162B2484F13000AA623B /* TrafficLightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightCell.swift; sourceTree = "<group>"; };
 		0B84162D2484F17D00AA623B /* TrafficLightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrafficLightCell.xib; sourceTree = "<group>"; };
 		0B84162F2484F84600AA623B /* TrafficLightDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightDataProvider.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				0B35A42E24850D11005B082A /* PresenterInteractable.swift */,
+				0B6E26AC24878B16000B90DF /* ViewInteractable.swift */,
 				0BEDC5CA2486577000B763E9 /* LightViewUsable.swift */,
 				0B35A4322485184B005B082A /* InterfaceActionDelegate.swift */,
 			);
@@ -306,6 +309,7 @@
 			files = (
 				0BE7F1A32486463F004B7F20 /* PedestrianLightDataProvider.swift in Sources */,
 				0BEDC5CB2486577000B763E9 /* LightViewUsable.swift in Sources */,
+				0B6E26AD24878B16000B90DF /* ViewInteractable.swift in Sources */,
 				0B35A42C24850B01005B082A /* TrafficLightPresenter.swift in Sources */,
 				0BE7F1A1248644B3004B7F20 /* PedestrianLightViewController.swift in Sources */,
 				0BE7F1A62486477D004B7F20 /* PedestrianLightCell.swift in Sources */,

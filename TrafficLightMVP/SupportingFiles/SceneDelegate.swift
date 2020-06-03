@@ -16,12 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let tabBarController = UITabBarController()
-        tabBarController.tabBar.isTranslucent = false
-        tabBarController.tabBar.barTintColor = UIColor.systemYellow
-        tabBarController.tabBar.tintColor = UIColor.darkText
-        
-        tabBarController.setViewControllers([tabBarController.prepareViewController(TrafficLightViewController.self, title: nil, imageSystemName: "car.fill", tag: 0), tabBarController.prepareViewController(PedestrianLightViewController.self, title: nil, imageSystemName: "person.fill", tag: 1)], animated: true)
+        let tabBarController = UITabBarController.withDefaultSettings()
+        tabBarController.setViewControllers(vcTypes: [TrafficLightViewController.self, PedestrianLightViewController.self],
+                                            presenterTypes: [TrafficLightPresenter.self, PedestrianLightPresenter.self],
+                                            imageSystemNames: ["car.fill", "person.fill"])
         window?.rootViewController = tabBarController
     }
 

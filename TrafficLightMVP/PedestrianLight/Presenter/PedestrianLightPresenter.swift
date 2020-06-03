@@ -8,33 +8,23 @@
 
 import Foundation
 
-class PedestrianLightPresenter {
+class PedestrianLightPresenter: ViewInteractable {
     
     private let service = TrafficLightService()
     
-    private weak var view: PresenterInteractable?
+    weak var view: PresenterInteractable?
     
-    func pedestrianLightSectionChanged(_ index: Int) {
-        service.setPedestrianLight(for: index)
-        view?.updateLightView(with: service.getPedestrianLight())
-    }
-    
-    func pedestrianLightSectionDemanded(_ index: Int) {
-        service.setPedestrianLight(for: index)
-        view?.updateLightView(with: service.getPedestrianLight())
-    }
-    
-    func viewDidLoad(_ viewToInteract: PresenterInteractable) {
+    required init(_ viewToInteract: PresenterInteractable?) {
         self.view = viewToInteract
-        view?.initSetup()
+    }
+
+    func lightSectionChanged(_ index: Int) {
+        service.setPedestrianLight(for: index)
+        view?.updateLightView(with: service.getPedestrianLight())
     }
     
     func viewWillAppear() {
         view?.updateLightView(with: service.getPedestrianLight())
-    }
-    
-    func viewDidAppear() {
-        view?.reloadView()
     }
     
 }

@@ -8,7 +8,9 @@
 
 import UIKit
 
-protocol PresenterInteractable: AnyObject {
+protocol PresenterInteractable: UIViewController {
+    
+    var presenter: ViewInteractable? { get set }
     
     func initSetup()
     

@@ -14,16 +14,16 @@ class PedestrianLightViewController: UIViewController {
     
     private let dataProvider = PedestrianLightDataProvider()
     
-    private let presenter = PedestrianLightPresenter()
+    var presenter: ViewInteractable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad(self)
+        presenter?.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.viewWillAppear()
+        presenter?.viewWillAppear()
     }
     
 }
@@ -52,8 +52,8 @@ extension PedestrianLightViewController: PresenterInteractable {
 extension PedestrianLightViewController: InterfaceActionDelegate {
     
     func tapActionForElement(with index: Int) {
-        guard index == 2 else { presenter.pedestrianLightSectionChanged(index); return }
-        presenter.pedestrianLightSectionDemanded(0)
+        guard index == 2 else { presenter?.lightSectionChanged(index); return }
+        presenter?.lightSectionDemanded(0)
     }
     
 }
