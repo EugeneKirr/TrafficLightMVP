@@ -36,7 +36,7 @@ extension PedestrianLightDataProvider: UICollectionViewDelegate, UICollectionVie
 extension PedestrianLightDataProvider: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 0.90 * collectionView.bounds.height)
+        return collectionView.safeAreaLayoutGuide.layoutFrame.size
     }
     
 }
